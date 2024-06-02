@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About singAbout.com</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>SingAbout</h1>
+            <p align="center">Welcome !</p>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+    <nav >
+      
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+       <a href="#features">Features</a>
+      <a href="#contact">Contact</a>
+     
+   </nav>
+            </div>
+        
+    </header>
+    <section id="hero">
+        <div class="container">
+            <h2>Your Singing Adventure Starts Here</h2>
+            <p>Join a vibrant community of singing enthusiasts. Whether you're a pro or just love to sing for fun, singAbout.com is your go-to platform.</p>
+            <a href="#features" class="btn" id ="bk">Discover More</a>
+        </div>
+    </section>
+        
+    </nav>
+    <main class="container">
+        <section id="about">
+            <h2>About Us</h2>
+            <p>All artists of all types can make their freestyles and become superstars here. Join our community to share your talent and reach a global audience.    SingAbout.com is the ultimate platform for singing enthusiasts. Whether you're a professional singer or just love to sing in the shower, singAbout.com has something for everyone.</p>
+        </section>
+        <section id="features">
+            <h2>Features</h2>  
+            <ul>
+                 <li>
+                 <a href="#about">About </a>
+               
+               </li>
+                <li>
+                 <a href="#trending">Trending</a>
+                 </li>
+                <li>
+               <a href="#community">Community</a>
+                  </li>  
+                <li>
+               <a href="#events">Events</a>
+               </li>
+            </ul>
+        </section>
+        
+    
+    <br>
+    
+    
+    <br>
+    
+    
+    <br>
+<a href="#today">Today's Music</a>
+     
+
+        <section id="trending">
+            <h2>Trending Music</h2>
+            <p>Discover the most popular music currently trending in our community. Stay updated with the latest hits and artists making waves today.</p>
+        </section>
+
+        <section id="community">         <h2>Community</h2>
+            <p>Join our vibrant community of artists and music lovers. Share your creations, collaborate with others, and get feedback on your work.</p>
+        </section>
+
+        <section id="events">
+            <h2>Events</h2>
+            <p>Find out about upcoming events, concerts, and competitions. Participate and showcase your talent to a live audience.</p>
+        </section>
+
+        
+<main>
+        <section id="today">
+            <h2>Today's Music Types</h2>
+            <ul class="music-list">
+                <li onclick="startRecording('Classical')">Classical</li>
+                <li onclick="startRecording('Jazz')">Jazz</li>
+                <li onclick="startRecording('Rock')">Rock</li>
+                <li onclick="startRecording('Pop')">Pop</li>
+                <li onclick="startRecording('Hip-Hop')">Hip-Hop</li>
+                <li onclick="startRecording('Electronic')">Electronic</li>
+                <li onclick="startRecording('Country')">Country</li>
+                <li onclick="startRecording('Reggae')">Reggae</li>
+                <li onclick="startRecording('Metal')">Metal</li>
+                <li onclick="startRecording('R&B')">R&B</li>
+                <li onclick="startRecording('Soul')">Soul</li>
+                <li onclick="startRecording('Gospel')">Gospel</li>
+                <li onclick="startRecording('K-Pop')">K-Pop</li>
+                <li onclick="startRecording('World Music')">World Music</li>
+
+          </ul>              
+      </section> 
+        <section id="signup">
+            <h2>Sign Up</h2>
+            <form id="signupForm">
+               <label for="signupName">Name:</label>
+    <input type="name" id="signupName" required>          
+         <input type="Name2" id="signupName2"required> 
+                <label for="signupEmail">Email:</label>
+                <input type="email" id="signupEmail" required>
+                
+                <label for="signupPassword">Password:</label>
+                <input type="password" id="signupPassword" required>
+                <p>already have an account ?<a href="#login">log In</a></p>
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+
+        <section id="login">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="loginEmail">Email:</label>
+                <input type="email" id="loginEmail" required>
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+
+        <section id="recordingSection">
+            <h2 id="recordingType">Recording</h2>
+            <p id="recordingStatus">Click to start recording</p>
+            <button id="startRecordingButton" onclick="toggleRecording()">Start Recording</button>
+            <audio id="recordedAudio" controls></audio>
+        </section>
+  
+   
+  <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or feedback, feel free to 
+reach out to us at <a href="mailto:singAbout.info@gmail.com">info@singAbout.com</a></p>
+        </section>     
+    </main>
+
+
+
+ <footer>
+       <a href="#" class="back-to-top">Back to Top</a>    
+        <div class="container">
+            <p>&copy; 2024 singAbout.com. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    
+    
+    
+    
+    
+    
+    <style>
+        h1{
+        text-align:center;   
+        }
+        #bk{
+            font-weight:bold;
+            text-decoration:none;
+            color:white;
+            padding-top:0;
+            margin:auto;
+            background-color:black;
+            border:none;
+            border-radius:23px;
+            ppadding-bottom:34px;
+            width:120px;
+            height:25px;
+           }
+   body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 85%;
+   
+}
+
+header {
+    background: #3f51b5;
+    color: #fff;
+    padding: 1px 0;
+    text-align:   20px;
+        }
+nav a{
+    margin-left:10px;
+    float: left;
+  display: flex;            
+  flex:1fr;
+  padding: 4px 6px;
+  text-decoration: none;
+  color:white;
+  font-weight:bolder;
+}
+
+nav {
+    background: #303f9f;
+    padding: 1rem 0;
+    
+}
+    
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1.5rem;
+    
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b;
+}
+
+main {
+    padding: 2rem 0;
+}
+
+section {
+    margin: 2rem 0;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #3f51b5;
+    border-bottom: 2px solid #3f51b5;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background: #3f51b5;
+    color: #fff;
+    border-radius:40px;
+    opacity:1rem;
+}
+
+footer p {
+    margin: 0;
+     
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+}    
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ccc;
+}
+
+main {
+  padding: 4rem 1rem 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+ul.music-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0 -1rem;
+}
+
+ul.music-list li {
+  list-style: none;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  background: #eee;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+ul.music-list li:hover {
+  background: #ddd;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+}
+
+form label {
+  margin: 1rem 0 0.5rem;
+}
+
+form input {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+
+form button {
+  padding: 1rem 2rem;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #555;
+}
+
+
+
+#recordingSection {
+  display: none;
+  text-align: center;
+  padding: 1rem;
+}
+
+#recordingStatus {
+  margin: 1rem 0;
+  border-radius:25px;
+}
+ .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #3f51b5;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: none;
+    transition: opacity 0.3s;
+}
+
+.back-to-top:hover {
+    background-color: #303f9f;
+}
+
+.show {
+    display: block;
+} 
+   
+
+ </style>
+ 
+
+
+  <!--  
+    <script>
+      let mediaRecorder;
+let audioChunks = [];
+let isRecording = false;
+
+function startRecording(type) {
+  document.getElementById('recordingSection').style.display = 'block';
+  document.getElementById('recordingType').innerText = `Recording ${type}`;
+  document.getElementById('recordingStatus').innerText = 'Click to start recording';
+}
+
+function toggleRecording() {
+  if (isRecording) {
+    stopRecording();
+  } else {
+    startMediaRecording();
+  }
+}
+
+function startMediaRecording() {
+  navigator.mediaDevices.getUserMedia({ audio: true })
+    .then(stream => {
+      mediaRecorder = new MediaRecorder(stream);
+      mediaRecorder.start();
+      isRecording = true;
+      document.getElementById('recordingStatus').innerText = 'Recording... Click to stop';
+      document.getElementById('startRecordingButton').innerText = 'Stop Recording';
+      mediaRecorder.addEventListener('dataavailable', event => {
+        audioChunks.push(event.data);
+      });
+      mediaRecorder.addEventListener('stop', () => {
+        const audioBlob = new Blob(audioChunks);
+        const audioUrl = URL.createObjectURL(audioBlob);
+        const audio = document.getElementById('recordedAudio');
+        audio.src = audioUrl;
+        audioChunks = [];
+      });
+    });
+}
+
+function stopRecording() {
+  mediaRecorder.stop();
+  isRecording = false;
+  document.getElementById('recordingStatus').innerText = 'Recording stopped';
+  document.getElementById('startRecordingButton').innerText = 'Start Recording';
+}
+
+document.getElementById('signupForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  alert('Sign Up successful!');
+  // Add further sign-up logic here
+});
+
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  alert('Login successful!');
+  // Add further login logic here
+});
+document.getElementById('startRecordingButton').addEventListener('click',toggleRecording);
+window.addEventListener('scroll', () => {
+    const backToTopButton = document.querySelector('.back-to-top');
+    if (window.scrollY > 200) {
+        backToTopButton.classList.add('show');
+    } else {
+        backToTopButton.classList.remove('show');
+    }
+});
+
+document.querySelector('.back-to-top').addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+ </script>
+  -->
+<script>
+   let  mediaRecorder;
+        let audioChunks = [];
+        let isRecording = false;
+
+        function startRecording(type) {
+            document.getElementById('recordingSection').style.display = 'block';
+            document.getElementById('recordingType').innerText = `Recording ${type}`;
+            document.getElementById('recordingStatus').innerText = 'Click to start recording';
+        }
+
+        function toggleRecording() {
+            if (isRecording) {
+                stopRecording();
+            } else {
+                startMediaRecording();
+            }
+        }
+
+        function startMediaRecording() {
+            navigator.mediaDevices.getUserMedia({ audio: true })
+                .then(stream => {
+                    mediaRecorder = new MediaRecorder(stream);
+                    mediaRecorder.start();
+                    isRecording = true;
+                    document.getElementById('recordingStatus').innerText = 'Recording... Click to stop';
+                    document.getElementById('startRecordingButton').innerText = 'Stop Recording';
+                    mediaRecorder.addEventListener('dataavailable', event => {
+                        audioChunks.push(event.data);
+                    });
+                    mediaRecorder.addEventListener('stop', () => {
+                        const audioBlob = new Blob(audioChunks);
+                        const audioUrl = URL.createObjectURL(audioBlob);
+                        const audio = document.getElementById('recordedAudio');
+                        audio.src = audioUrl;
+                        audioChunks = [];
+                    });
+                });
+        }
+
+        function stopRecording() {
+            mediaRecorder.stop();
+            isRecording = false;
+            document.getElementById('recordingStatus').innerText = 'Recording stopped';
+            document.getElementById('startRecordingButton').innerText = 'Start Recording';
+        }
+
+        document.getElementById('signupForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Sign Up successful!');
+            // Add further sign-up logic here
+        });
+
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Login successful!');
+            // Add further login logic here
+        });
+
+        document.getElementById('startRecordingButton').addEventListener('click', toggleRecording);
+
+        window.addEventListener('scroll', () => {
+            const backToTopButton = document.querySelector('.back-to-top');
+            if (window.scrollY > 200) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+
+        document.querySelector('.back-to-top').addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+    </script>
+   
+</body>
+</html>
